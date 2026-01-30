@@ -1,14 +1,6 @@
 name: Trigger COPR build
 
-on:
-  workflow_call:
-    secrets:
-      COPR_API_CONFIG:
-    inputs:
-      copr_project:
-        description: COPR project to target
-        required: true
-        type: string
+on: []
 
 permissions:
   contents: write

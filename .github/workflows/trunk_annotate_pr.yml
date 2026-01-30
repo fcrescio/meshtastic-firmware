@@ -1,10 +1,7 @@
 name: Annotate PR with trunk issues
 # See: https://github.com/trunk-io/trunk-action/blob/v1/readme.md#getting-inline-annotations-for-fork-prs
 
-on:
-  workflow_run:
-    workflows: [Pull Request] # Name from `trunk_check.yml`
-    types: [completed]
+on: []
 
 permissions: read-all
 

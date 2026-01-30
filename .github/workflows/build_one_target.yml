@@ -1,28 +1,6 @@
 name: Build One Target
 
-on:
-  workflow_dispatch:
-    inputs:
-      # trunk-ignore(checkov/CKV_GHA_7)
-      arch:
-        type: choice
-        options:
-          - esp32
-          - esp32s3
-          - esp32c3
-          - esp32c6
-          - nrf52840
-          - rp2040
-          - rp2350
-          - stm32
-      target:
-        type: string
-        required: false
-        description: Choose the target board, e.g. nrf52_promicro_diy_tcxo. If blank, will find available targets.
-      # find-target:
-      #   type: boolean
-      #   default: true
-      #   description: 'Find the available targets'
+on: []
 
 permissions: read-all
 

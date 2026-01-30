@@ -1,19 +1,5 @@
 name: Daily Packaging
-on:
-  schedule:
-    - cron: 0 2 * * *
-  workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - debian/**
-      - "*.rpkg"
-      - .github/workflows/nightly_packaging.yml
-      - .github/workflows/build_debian_src.yml
-      - .github/workflows/package_ppa.yml
-      - .github/workflows/package_obs.yml
-      - .github/workflows/hook_copr.yml
+on: []
 
 permissions:
   contents: write

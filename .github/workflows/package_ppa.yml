@@ -1,19 +1,6 @@
 name: Package for Launchpad PPA
 
-on:
-  workflow_call:
-    secrets:
-      PPA_GPG_PRIVATE_KEY:
-        required: true
-    inputs:
-      ppa_repo:
-        description: Meshtastic PPA to target
-        required: true
-        type: string
-      series:
-        description: Ubuntu series to target
-        required: true
-        type: string
+on: []
 
 permissions:
   contents: write

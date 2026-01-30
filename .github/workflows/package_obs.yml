@@ -1,21 +1,6 @@
 name: Package for OpenSUSE Build Service
 
-on:
-  workflow_call:
-    secrets:
-      OBS_PASSWORD:
-        required: true
-      PPA_GPG_PRIVATE_KEY:
-        required: true
-    inputs:
-      obs_project:
-        description: Meshtastic OBS project to target
-        required: true
-        type: string
-      series:
-        description: Debian series to target
-        required: true
-        type: string
+on: []
 
 permissions:
   contents: write

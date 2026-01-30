@@ -1,8 +1,6 @@
 name: Trigger release workflows upon Publish
 
-on:
-  release:
-    types: [published, released]
+on: []
 
 permissions:
   contents: write

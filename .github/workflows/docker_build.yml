@@ -2,39 +2,7 @@ name: Build Docker
 
 # Build Docker image, push untagged (digest-only)
 
-on:
-  workflow_call:
-    secrets:
-      DOCKER_FIRMWARE_TOKEN:
-        required: false # Only required for push
-    inputs:
-      distro:
-        description: Distro to target
-        required: true
-        type: string
-        # choices: [debian, alpine]
-      platform:
-        description: Platform to target
-        required: true
-        type: string
-      runs-on:
-        description: Runner to use
-        required: true
-        type: string
-      push:
-        description: Push images to registry
-        required: false
-        type: boolean
-        default: false
-      pio_env:
-        description: PlatformIO environment to build
-        required: false
-        type: string
-        default: native
-    outputs:
-      digest:
-        description: Digest of built image
-        value: ${{ jobs.docker-build.outputs.digest }}
+on: []
 
 permissions:
   contents: write
