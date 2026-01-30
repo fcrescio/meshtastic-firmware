@@ -1,6 +1,6 @@
 ---
 name: Semgrep Differential Scan
-on: pull_request
+on: []
 
 permissions: read-all
 

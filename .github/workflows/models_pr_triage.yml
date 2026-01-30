@@ -1,8 +1,6 @@
 name: PR Triage (Models)
 
-on:
-  pull_request_target:
-    types: [opened]
+on: []
 
 permissions:
   pull-requests: write

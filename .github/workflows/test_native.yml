@@ -1,8 +1,6 @@
 name: Run Tests on Native platform
 
-on:
-  workflow_call:
-  workflow_dispatch:
+on: []
 
 permissions: {}
 

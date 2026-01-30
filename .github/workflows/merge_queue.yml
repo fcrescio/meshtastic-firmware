@@ -3,9 +3,7 @@ name: Merge Queue
 # concurrency:
 #   group: merge-queue-${{ github.head_ref || github.run_id }}
 #   cancel-in-progress: true
-on:
-  # Merge group is a special trigger that is used to trigger the workflow when a merge group is created.
-  merge_group:
+on: []
 
 jobs:
   setup:

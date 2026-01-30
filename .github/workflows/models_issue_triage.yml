@@ -1,8 +1,6 @@
 name: Issue Triage (Models)
 
-on:
-  issues:
-    types: [opened]
+on: []
 
 permissions:
   issues: write
