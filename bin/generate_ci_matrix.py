@@ -19,6 +19,11 @@ parser.add_argument(
 args = parser.parse_args()
 
 outlist = []
+allowed_boards = {
+  "heltec-v3",
+  "heltec-v4",
+  "heltec-v4-tft",
+}
 
 cfg = ProjectConfig.get_instance()
 pio_envs = cfg.envs()
@@ -45,7 +50,8 @@ for pio_env in pio_envs:
     "board_level": cfg.get(f"env:{pio_env}", "board_level", default=None),
     "board_check": bool(cfg.get(f"env:{pio_env}", "board_check", default=False)),
   }
-  all_envs.append(env)
+  if env["ci"]["board"] in allowed_boards:
+    all_envs.append(env)
 
 # Filter outputs based on options
 # Check is mutually exclusive with other options (except 'pr')

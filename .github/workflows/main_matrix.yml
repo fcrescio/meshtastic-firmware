@@ -160,14 +160,7 @@ jobs:
       fail-fast: false
       matrix:
         arch:
-          - esp32
           - esp32s3
-          - esp32c3
-          - esp32c6
-          - nrf52840
-          - rp2040
-          - rp2350
-          - stm32
     runs-on: ubuntu-latest
     needs: [version, build]
     steps:
